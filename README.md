@@ -19,7 +19,7 @@
 
 ## ⭐ 先点个 Star 吧！
 
-如果你觉得这个项目有趣、有用，或者给你带来了快乐，请 **[点个 Star ⭐](https://github.com/YourUsername/SBTI)** 支持一下！
+如果你觉得这个项目有趣、有用，或者给你带来了快乐，请 **[点个 Star ⭐]([https://github.com/YourUsername/SBTI](https://github.com/zhixu001/SBTI))** 支持一下！
 你的认可就是我们持续维护和更新的最大动力 💪
 
 ---
@@ -153,7 +153,7 @@ python -m http.server 8080
 ### 再次提醒
 
 如果这个项目给你带来了快乐或者帮助，别忘了
-**[⭐ 点个 Star](https://github.com/YourUsername/SBTI)**
+**[⭐ 点个 Star]([https://github.com/YourUsername/SBTI](https://github.com/zhixu001/SBTI))**
 
 ---
 

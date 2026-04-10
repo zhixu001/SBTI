@@ -131,7 +131,7 @@
       gap: 20px;
       margin-bottom: 24px;
     }
-    .article-card {
+    a.article-card {
       background: #fff;
       border-radius: 16px;
       padding: 20px 24px;
@@ -140,6 +140,12 @@
       border: 1px solid var(--line);
       display: flex;
       flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+    }
+    a.article-card:hover {
+      text-decoration: none;
+      color: inherit;
     }
     .article-card:hover {
       transform: translateY(-3px);
@@ -175,6 +181,7 @@
     .tag-red { background: #fff1f0; color: #a8071a; }
     .tag-gold { background: #fffbe6; color: #d48806; }
     .tag-gray { background: #f5f5f5; color: #424242; }
+    .tag-pink { background: #fff0f6; color: #c41d7f; }
     .cta-banner {
       background: linear-gradient(135deg, #165dff, #722ed1);
       color: #fff;
@@ -234,84 +241,241 @@
     </div>
 
     <div class="header">
-      <div class="badge">📚 12篇精品内容</div>
+      <div class="badge">📚 40+ 完整内容</div>
       <h1>SBTI 深度内容中心</h1>
-      <p>全网最全SBTI内容库，从入门到深度全覆盖</p>
+      <p>全网最全SBTI内容库，27种人格解析+深度内容全覆盖</p>
     </div>
 
     <div class="category-title">📰 现象观察 · 深度报道</div>
     <div class="articles-grid">
-      <div class="article-card" onclick="window.location.href='article.html'">
+      <a href="article.html" class="article-card">
         <span class="article-tag tag-blue">🔥 现象级刷屏</span>
         <h3>SBTI一夜刷屏全网！当"死者""吗喽"成为年轻人的社交新名片</h3>
         <p>一场起源于B站的恶搞测试，如何征服了整整一代年轻人？</p>
-      </div>
-      <div class="article-card" onclick="window.location.href='guide.html'">
+      </a>
+      <a href="guide.html" class="article-card">
         <span class="article-tag tag-green">📖 入门科普</span>
         <h3>【全网爆火解析】SBTI是什么？一夜刷屏的"玩梗版MBTI"全科普</h3>
         <p>新手指南：SBTI和MBTI到底有什么不一样？</p>
-      </div>
-      <div class="article-card" onclick="window.location.href='story.html'">
+      </a>
+      <a href="story.html" class="article-card">
         <span class="article-tag tag-purple">🎬 诞生揭秘</span>
         <h3>【深度揭秘】SBTI的诞生始末：B站UP主劝友戒酒，意外引爆全网</h3>
         <p>SBTI背后的有趣故事：原来只是UP主的劝酒工具？</p>
-      </div>
+      </a>
     </div>
 
     <div class="category-title">📚 人格图鉴 · 类型解析</div>
     <div class="articles-grid">
-      <div class="article-card" onclick="window.location.href='types.html'">
+      <a href="types.html" class="article-card">
         <span class="article-tag tag-orange">🎭 人格图鉴</span>
         <h3>【全网最全】SBTI 27种人格类型全解析与对照指南</h3>
-        <p>死者、吗喽、草者、送钱者...27种人格完整解读</p>
-      </div>
-      <div class="article-card" onclick="window.location.href='workplace.html'">
+        <p>死者、吗喽、屌丝、送钱者...27种人格完整深度解读</p>
+      </a>
+      <a href="workplace.html" class="article-card">
         <span class="article-tag tag-blue">💼 职场人格</span>
         <h3>【SBTI职场人格】吗喽摸鱼、死者躺平……打工人集体破防</h3>
         <p>每个标签都是打工人的精神状态诊断书</p>
-      </div>
+      </a>
+      <a href="solo.html" class="article-card">
+        <span class="article-tag tag-purple">🌟 热门人格</span>
+        <h3>SOLO孤儿人格深度解析：孤独是选择的国王</h3>
+        <p>当代年轻人为什么越来越喜欢一个人生活？</p>
+      </a>
+      <a href="dead.html" class="article-card">
+        <span class="article-tag tag-gray">💀 爆款人格</span>
+        <h3>DEAD死者人格：灵魂已死，肉体还在打工</h3>
+        <p>当代年轻人最有共鸣的人格，没有之一</p>
+      </a>
+    </div>
+
+    <div class="category-title">🎭 27种人格 · 独立深度解析</div>
+    <div class="articles-grid">
+      <a href="dead.html" class="article-card">
+        <span class="article-tag tag-gray">💀 摆烂组</span>
+        <h3>DEAD 死者：灵魂已死，肉体打工</h3>
+        <p>当代年轻人最有共鸣的人格，精神已死，只剩躯壳在动</p>
+      </a>
+      <a href="malo.html" class="article-card">
+        <span class="article-tag tag-orange">🐒 摆烂组</span>
+        <h3>MALO 吗喽：拒绝内卷的打工人</h3>
+        <p>人生是个副本，而我只是一只吗喽</p>
+      </a>
+      <a href="zzzz.html" class="article-card">
+        <span class="article-tag tag-purple">😴 摆烂组</span>
+        <h3>ZZZZ 装死者：用装死逃避一切</h3>
+        <p>我没死，我只是在睡觉，遇事就躲就拖</p>
+      </a>
+      <a href="imfw.html" class="article-card">
+        <span class="article-tag tag-gray">🗑️ 摆烂组</span>
+        <h3>IMFW 废物：极致摆烂破罐子破摔</h3>
+        <p>既然做不到最好，那就彻底躺平在谷底</p>
+      </a>
+      <a href="dior-s.html" class="article-card">
+        <span class="article-tag tag-blue">🪣 摆烂组</span>
+        <h3>Dior-s 屌丝：消费主义的蔑视者</h3>
+        <p>第欧根尼精神传人，蔑视成功学PUA</p>
+      </a>
+      <a href="poor.html" class="article-card">
+        <span class="article-tag tag-green">💰 摆烂组</span>
+        <h3>POOR 贫困者：我穷但我很专一</h3>
+        <p>专注搞钱，不乱花钱，不搞社交，貔貅本貅</p>
+      </a>
+      <a href="atmer.html" class="article-card">
+        <span class="article-tag tag-red">💳 付出系</span>
+        <h3>ATM-er 送钱者：人形提款机</h3>
+        <p>永远在付出耐心精力，只出不进的老好人</p>
+      </a>
+      <a href="mum.html" class="article-card">
+        <span class="article-tag tag-pink">👩 付出系</span>
+        <h3>MUM 妈妈：朋友里的老妈子</h3>
+        <p>超强共情力，管吃管喝管情绪的付出型人格</p>
+      </a>
+      <a href="than-k.html" class="article-card">
+        <span class="article-tag tag-gold">🙏 付出系</span>
+        <h3>THAN-K 感恩者：讨好型人格天花板</h3>
+        <p>谢谢对不起永远挂嘴边，别人好一点就感恩戴德</p>
+      </a>
+      <a href="gogo.html" class="article-card">
+        <span class="article-tag tag-green">🚀 行动派</span>
+        <h3>GOGO 行者：永远在路上</h3>
+        <p>身体和灵魂总有一个在路上，热爱自由拒绝束缚</p>
+      </a>
+      <a href="imsb.html" class="article-card">
+        <span class="article-tag tag-red">😔 内耗组</span>
+        <h3>IMSB 自我攻击者：习惯性自我PUA</h3>
+        <p>极致内耗，大脑里永远两个战士在内斗</p>
+      </a>
+      <a href="thinker.html" class="article-card">
+        <span class="article-tag tag-blue">🤔 内耗组</span>
+        <h3>THIN-K 思考者：想太多内耗王者</h3>
+        <p>敏感多疑，一句话在心里反复重播800遍</p>
+      </a>
+      <a href="shit.html" class="article-card">
+        <span class="article-tag tag-green">💩 内耗组</span>
+        <h3>SHIT 愤世者：这世界就是一坨屎</h3>
+        <p>愤世嫉俗天花板，用最原始的愤怒对抗世界</p>
+      </a>
+      <a href="woc.html" class="article-card">
+        <span class="article-tag tag-orange">😱 情绪组</span>
+        <h3>WOC! 握草人：震惊型人格</h3>
+        <p>口头禅"卧槽"，表达情绪的方式简单但真诚</p>
+      </a>
+      <a href="joke-r.html" class="article-card">
+        <span class="article-tag tag-red">🎭 情绪组</span>
+        <h3>JOKE-R 小丑：原来我们都是小丑</h3>
+        <p>逗别人开心，自己深夜emo，微笑面具表演者</p>
+      </a>
+      <a href="ojbk.html" class="article-card">
+        <span class="article-tag tag-gray">😌 佛系组</span>
+        <h3>OJBK 无所谓人：我说随便是真随便</h3>
+        <p>万物皆可OJBK，人生没有禁忌没什么不能接受</p>
+      </a>
+      <a href="oh-no.html" class="article-card">
+        <span class="article-tag tag-blue">😱 悲观组</span>
+        <h3>OH-NO 哦不人：先知型悲观主义者</h3>
+        <p>每一件事的结局都是：哦不！我早说过会这样</p>
+      </a>
+      <a href="ctrl.html" class="article-card">
+        <span class="article-tag tag-blue">🎯 掌控派</span>
+        <h3>CTRL 拿捏者：社交场上的操盘手</h3>
+        <p>掌控欲爆棚，混乱生活最后的备份盘</p>
+      </a>
+      <a href="boss.html" class="article-card">
+        <span class="article-tag tag-red">👔 掌控派</span>
+        <h3>BOSS 领导者：天生掌权者卷王本王</h3>
+        <p>方向盘给我，我来开！目标感极强的内卷王</p>
+      </a>
+      <a href="sexy.html" class="article-card">
+        <span class="article-tag tag-pink">💋 魅力组</span>
+        <h3>SEXY 尤物：天生的注意力磁铁</h3>
+        <p>性感自信魅力拉满，社交焦点天生尤物</p>
+      </a>
+      <a href="fake.html" class="article-card">
+        <span class="article-tag tag-gray">🎭 特色组</span>
+        <h3>FAKE 伪人：社交变色龙</h3>
+        <p>戴面具生活，见人说人话见鬼说鬼话</p>
+      </a>
+      <a href="solo.html" class="article-card">
+        <span class="article-tag tag-purple">🧘 特色组</span>
+        <h3>SOLO 孤儿：孤独是选择的国王</h3>
+        <p>一个人就是一支队伍，享受独处拒绝无效社交</p>
+      </a>
+      <a href="drunk.html" class="article-card">
+        <span class="article-tag tag-orange">🍺 特色组</span>
+        <h3>DRUNK 酒鬼：整个测试最有故事的人格</h3>
+        <p>体内流淌的不是血液，是五粮液</p>
+      </a>
+      <a href="monk.html" class="article-card">
+        <span class="article-tag tag-gold">🧘 特色组</span>
+        <h3>MONK 僧人：四大皆空无欲无求</h3>
+        <p>没有那种世俗的欲望，不希望闲人来扰清修</p>
+      </a>
+      <a href="lover.html" class="article-card">
+        <span class="article-tag tag-pink">💕 特色组</span>
+        <h3>LOVE-R 多情者：永远在心动的恋爱脑</h3>
+        <p>爱意太满，这个时代最后的浪漫主义吟游诗人</p>
+      </a>
+      <a href="ghost.html" class="article-card">
+        <span class="article-tag tag-gray">👻 特色组</span>
+        <h3>GHOST 幽灵：社交透明人</h3>
+        <p>存在感趋近于零，在线但不可触达，发言即蒸发</p>
+      </a>
+      <a href="robot.html" class="article-card">
+        <span class="article-tag tag-blue">🤖 特色组</span>
+        <h3>ROBOT 机器人：工具人属性拉满</h3>
+        <p>Input任务，Output结果，按部就班完成所有事情</p>
+      </a>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #f9f0ff, #e6f4ff); border-radius: 16px; padding: 28px; margin: 32px 0;">
+      <p style="font-size: 16px; line-height: 1.9; color: #333; margin: 0;">
+        ✨ 以上是 <strong>SBTI人格测试27种类型的完整解析合集</strong>。每一篇都遵循统一的深度解析模板，包含维度画像、核心特质、人际相处和一句话总结。
+        <br><br>
+        SBTI本质上是一个纯娱乐产物，<strong>用荒诞消解荒诞，用自嘲抵抗焦虑</strong>。它不是严肃心理学工具，而是当代年轻人精神状态的一面镜子——无论你测出哪一型，都只是一个有趣的切面，而不是你的全部定义。
+      </p>
     </div>
 
     <div class="category-title">🔬 心理学 · 专家解读</div>
     <div class="articles-grid">
-      <div class="article-card" onclick="window.location.href='psychology.html'">
+      <a href="psychology.html" class="article-card">
         <span class="article-tag tag-purple">🧠 心理学</span>
         <h3>【心理专家解读】SBTI为什么会让人直呼"好准"？</h3>
         <p>从巴纳姆效应到情绪共鸣，揭开精准背后的秘密</p>
-      </div>
-      <div class="article-card" onclick="window.location.href='psychology-deep.html'">
+      </a>
+      <a href="psychology-deep.html" class="article-card">
         <span class="article-tag tag-red">💡 社会心理</span>
         <h3>【现象级刷屏背后】SBTI爆火的五大社会心理密码</h3>
         <p>裴双义主任解读：幽默防御、情绪出口、社交货币</p>
-      </div>
+      </a>
     </div>
 
     <div class="category-title">⚔️ 对比分析 · 深度评论</div>
     <div class="articles-grid">
-      <div class="article-card" onclick="window.location.href='compare.html'">
+      <a href="compare.html" class="article-card">
         <span class="article-tag tag-orange">⚔️ MBTI对比</span>
         <h3>【MBTI vs SBTI】全面对比：为什么说MBTI已过时？</h3>
         <p>从理论基础到传播逻辑，深度解析两大测试的本质差异</p>
-      </div>
-      <div class="article-card" onclick="window.location.href='commentary.html'">
+      </a>
+      <a href="commentary.html" class="article-card">
         <span class="article-tag tag-gray">✊ 深度评论</span>
         <h3>SBTI狂欢背后：年轻人拒绝被定义的精神突围</h3>
         <p>从社会文化角度深度解读SBTI现象背后的含义</p>
-      </div>
+      </a>
     </div>
 
     <div class="category-title">🛡️ 用户指南 · 官方建议</div>
     <div class="articles-grid">
-      <div class="article-card" onclick="window.location.href='security.html'">
+      <a href="security.html" class="article-card">
         <span class="article-tag tag-red">🔒 安全必读</span>
         <h3>【重要提醒】测SBTI先别急！警惕链接背后的隐私风险</h3>
         <p>小心"李鬼"链接！安全测试三步法，保护个人信息不泄露</p>
-      </div>
-      <div class="article-card" onclick="window.location.href='final.html'">
+      </a>
+      <a href="final.html" class="article-card">
         <span class="article-tag tag-gold">🏁 完结篇</span>
         <h3>【完结篇】SBTI测试的正确打开方式：轻松玩玩，别太当真</h3>
         <p>玩归玩闹归闹，别拿SBTI开玩笑！官方正确玩法指南</p>
-      </div>
+      </a>
     </div>
 
     <div class="cta-banner">

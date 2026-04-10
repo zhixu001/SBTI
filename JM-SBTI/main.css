@@ -209,44 +209,35 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 14px;
-    padding: 16px 28px;
+    gap: 12px;
+    padding: 16px 24px;
     border-radius: 16px;
-    background: linear-gradient(135deg, #07c160, #06ad56);
+    background: linear-gradient(135deg, #12b7f5, #0099ff);
     color: #fff;
-    box-shadow: 0 8px 24px rgba(7, 193, 96, 0.35);
+    box-shadow: 0 8px 24px rgba(18, 183, 245, 0.35);
     transition: all 0.3s ease;
     cursor: pointer;
     width: 100%;
 }
 .wechat-callout:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 32px rgba(7, 193, 96, 0.45);
+    box-shadow: 0 12px 32px rgba(18, 183, 245, 0.45);
 }
 .wechat-callout .wx-icon {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1;
 }
 .wechat-callout .wx-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    text-align: left;
-}
-.wechat-callout .wx-title {
-    font-size: 11px;
-    opacity: 0.9;
-    font-weight: 500;
-    letter-spacing: 1px;
+    text-align: center;
 }
 .wechat-callout .wx-name {
     font-weight: 800;
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.2;
 }
 .wechat-callout .wx-arrow {
-    font-size: 16px;
-    opacity: 0.85;
-    margin-left: 4px;
+    font-size: 18px;
+    opacity: 0.9;
 }
 
 @media (max-width: 640px) {
@@ -1074,7 +1065,7 @@ button:disabled {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    background: linear-gradient(135deg, #07c160, #06ad56);
+    background: linear-gradient(135deg, #12b7f5, #0099ff);
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -1082,7 +1073,7 @@ button:disabled {
     height: 56px;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 8px 24px rgba(7, 193, 96, 0.4);
+    box-shadow: 0 8px 24px rgba(18, 183, 245, 0.4);
     display: none;
     align-items: center;
     justify-content: center;
@@ -1091,7 +1082,7 @@ button:disabled {
 
 .wechat-float-btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 12px 32px rgba(7, 193, 96, 0.5);
+    box-shadow: 0 12px 32px rgba(18, 183, 245, 0.5);
 }
 
 .wechat-float-btn.show {

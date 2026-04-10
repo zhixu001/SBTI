@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SBTI深度内容中心 | 全网最全SBTI内容库</title>
+  <meta name="description" content="全网最全SBTI深度内容中心，12篇精品内容覆盖：现象复盘、心理学解析、职场人格、MBTI对比、社会文化评论等多个维度。">
+  <meta name="keywords" content="SBTI文章, SBTI深度解析, SBTI内容库, SBTI心理学, SBTI职场, SBTI对比MBTI">
+  <meta name="author" content="JM校园团">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SBTI深度内容中心 | 全网最全SBTI内容库">
+  <meta property="og:description" content="全网最全SBTI深度内容中心，12篇精品内容全覆盖">
+  <meta property="og:image" content="img/share.png">
+  <meta property="og:url" content="https://sbti.jmkj.xyz/articles.html">
+  <meta property="og:site_name" content="SBTI人格测试官网">
+  
+  <link rel="canonical" href="https://sbti.jmkj.xyz/articles.html">
+  
+  <meta name="robots" content="index, follow">
+  
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  
+  <meta name="theme-color" content="#165dff">
+  
+  <style>
+    :root {
+      --accent-strong: #165dff;
+      --accent-bg: #e6f4ff;
+      --line: #e8e8e8;
+      --muted: #8c8c8c;
+      --bg: #f5f7fa;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: #1a1a1a;
+      line-height: 1.8;
+    }
+    .navbar {
+      background: linear-gradient(135deg, #165dff, #0d47a1);
+      padding: 12px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-logo {
+      font-weight: 900;
+      font-size: 20px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav-cta {
+      background: #fff;
+      color: var(--accent-strong);
+      padding: 10px 20px;
+      border-radius: 12px;
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+    .breadcrumb {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    .breadcrumb a {
+      color: var(--accent-strong);
+      text-decoration: none;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .header h1 {
+      font-size: 32px;
+      font-weight: 900;
+      margin-bottom: 12px;
+      color: var(--accent-strong);
+    }
+    .header p {
+      font-size: 17px;
+      color: var(--muted);
+    }
+    .header .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #165dff, #722ed1);
+      color: #fff;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .category-title {
+      font-size: 18px;
+      font-weight: 800;
+      margin: 40px 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--accent-strong);
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--accent-bg);
+    }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .article-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px 24px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+    }
+    .article-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(22, 93, 255, 0.15);
+      border-color: var(--accent-strong);
+    }
+    .article-tag {
+      display: inline-block;
+      padding: 3px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      align-self: flex-start;
+    }
+    .article-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.5;
+      color: #1a1a1a;
+    }
+    .article-card p {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0;
+      flex-grow: 1;
+    }
+    .tag-blue { background: #e6f4ff; color: #0d47a1; }
+    .tag-purple { background: #f9f0ff; color: #531dab; }
+    .tag-green { background: #f0f7f2; color: #00662c; }
+    .tag-orange { background: #fff7e6; color: #d46b08; }
+    .tag-red { background: #fff1f0; color: #a8071a; }
+    .tag-gold { background: #fffbe6; color: #d48806; }
+    .tag-gray { background: #f5f5f5; color: #424242; }
+    .cta-banner {
+      background: linear-gradient(135deg, #165dff, #722ed1);
+      color: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      margin-top: 48px;
+    }
+    .cta-banner h3 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .cta-banner p {
+      opacity: 0.9;
+      margin-bottom: 24px;
+      font-size: 16px;
+    }
+    .cta-banner button {
+      background: #fff;
+      color: var(--accent-strong);
+      border: none;
+      padding: 14px 48px;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .cta-banner button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 768px) {
+      .articles-grid {
+        grid-template-columns: 1fr;
+      }
+      .header h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="nav-logo">📚 SBTI深度内容中心</div>
+      <button class="nav-cta" onclick="window.location.href='index.html'">
+        🎮 返回测试
+      </button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">首页</a> > 深度内容中心
+    </div>
+
+    <div class="header">
+      <div class="badge">📚 12篇精品内容</div>
+      <h1>SBTI 深度内容中心</h1>
+      <p>全网最全SBTI内容库，从入门到深度全覆盖</p>
+    </div>
+
+    <div class="category-title">📰 现象观察 · 深度报道</div>
+    <div class="articles-grid">
+      <div class="article-card" onclick="window.location.href='article.html'">
+        <span class="article-tag tag-blue">🔥 现象级刷屏</span>
+        <h3>SBTI一夜刷屏全网！当"死者""吗喽"成为年轻人的社交新名片</h3>
+        <p>一场起源于B站的恶搞测试，如何征服了整整一代年轻人？</p>
+      </div>
+      <div class="article-card" onclick="window.location.href='guide.html'">
+        <span class="article-tag tag-green">📖 入门科普</span>
+        <h3>【全网爆火解析】SBTI是什么？一夜刷屏的"玩梗版MBTI"全科普</h3>
+        <p>新手指南：SBTI和MBTI到底有什么不一样？</p>
+      </div>
+      <div class="article-card" onclick="window.location.href='story.html'">
+        <span class="article-tag tag-purple">🎬 诞生揭秘</span>
+        <h3>【深度揭秘】SBTI的诞生始末：B站UP主劝友戒酒，意外引爆全网</h3>
+        <p>SBTI背后的有趣故事：原来只是UP主的劝酒工具？</p>
+      </div>
+    </div>
+
+    <div class="category-title">📚 人格图鉴 · 类型解析</div>
+    <div class="articles-grid">
+      <div class="article-card" onclick="window.location.href='types.html'">
+        <span class="article-tag tag-orange">🎭 人格图鉴</span>
+        <h3>【全网最全】SBTI 27种人格类型全解析与对照指南</h3>
+        <p>死者、吗喽、草者、送钱者...27种人格完整解读</p>
+      </div>
+      <div class="article-card" onclick="window.location.href='workplace.html'">
+        <span class="article-tag tag-blue">💼 职场人格</span>
+        <h3>【SBTI职场人格】吗喽摸鱼、死者躺平……打工人集体破防</h3>
+        <p>每个标签都是打工人的精神状态诊断书</p>
+      </div>
+    </div>
+
+    <div class="category-title">🔬 心理学 · 专家解读</div>
+    <div class="articles-grid">
+      <div class="article-card" onclick="window.location.href='psychology.html'">
+        <span class="article-tag tag-purple">🧠 心理学</span>
+        <h3>【心理专家解读】SBTI为什么会让人直呼"好准"？</h3>
+        <p>从巴纳姆效应到情绪共鸣，揭开精准背后的秘密</p>
+      </div>
+      <div class="article-card" onclick="window.location.href='psychology-deep.html'">
+        <span class="article-tag tag-red">💡 社会心理</span>
+        <h3>【现象级刷屏背后】SBTI爆火的五大社会心理密码</h3>
+        <p>裴双义主任解读：幽默防御、情绪出口、社交货币</p>
+      </div>
+    </div>
+
+    <div class="category-title">⚔️ 对比分析 · 深度评论</div>
+    <div class="articles-grid">
+      <div class="article-card" onclick="window.location.href='compare.html'">
+        <span class="article-tag tag-orange">⚔️ MBTI对比</span>
+        <h3>【MBTI vs SBTI】全面对比：为什么说MBTI已过时？</h3>
+        <p>从理论基础到传播逻辑，深度解析两大测试的本质差异</p>
+      </div>
+      <div class="article-card" onclick="window.location.href='commentary.html'">
+        <span class="article-tag tag-gray">✊ 深度评论</span>
+        <h3>SBTI狂欢背后：年轻人拒绝被定义的精神突围</h3>
+        <p>从社会文化角度深度解读SBTI现象背后的含义</p>
+      </div>
+    </div>
+
+    <div class="category-title">🛡️ 用户指南 · 官方建议</div>
+    <div class="articles-grid">
+      <div class="article-card" onclick="window.location.href='security.html'">
+        <span class="article-tag tag-red">🔒 安全必读</span>
+        <h3>【重要提醒】测SBTI先别急！警惕链接背后的隐私风险</h3>
+        <p>小心"李鬼"链接！安全测试三步法，保护个人信息不泄露</p>
+      </div>
+      <div class="article-card" onclick="window.location.href='final.html'">
+        <span class="article-tag tag-gold">🏁 完结篇</span>
+        <h3>【完结篇】SBTI测试的正确打开方式：轻松玩玩，别太当真</h3>
+        <p>玩归玩闹归闹，别拿SBTI开玩笑！官方正确玩法指南</p>
+      </div>
+    </div>
+
+    <div class="cta-banner">
+      <h3>🎮 读完文章，来体验一下传说中的"发疯版MBTI"！</h3>
+      <p>3分钟，看看SBTI会给你贴上什么标签</p>
+      <button onclick="window.location.href='index.html'">
+        🚀 立即开始SBTI测试
+      </button>
+    </div>
+  </div>
+</body>
+</html>

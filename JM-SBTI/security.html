@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SBTI测试安全指南 - 测SBTI先别急！警惕链接背后的隐私风险</title>
+  <meta name="description" content="测SBTI先别急！安全专家提醒：警惕SBTI测试链接背后的隐私风险。如何辨别官方正版与仿冒钓鱼网站？避免个人信息泄露的安全三步法。">
+  <meta name="keywords" content="SBTI安全, SBTI隐私, SBTI仿冒, SBTI钓鱼网站, SBTI官方链接, SBTI注册商标, SBTI信息泄露, SBTI微信授权">
+  <meta name="author" content="JM校园团">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="测SBTI先别急！警惕链接背后的隐私风险">
+  <meta property="og:description" content="安全专家深度提醒：多个仿冒SBTI链接正在传播，小心你的个人信息！">
+  <meta property="og:image" content="img/share.png">
+  <meta property="og:url" content="https://sbti.jmkj.xyz/security.html">
+  <meta property="og:site_name" content="SBTI人格测试官网">
+  
+  <link rel="canonical" href="https://sbti.jmkj.xyz/security.html">
+  
+  <meta name="robots" content="index, follow">
+  
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  
+  <meta name="theme-color" content="#cf1322">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "SBTI测试安全指南 - 警惕链接背后的隐私风险",
+    "description": "安全专家提醒：多个仿冒SBTI链接正在传播，避免个人信息泄露的安全三步法。"
+  }
+  </script>
+  
+  <style>
+    :root {
+      --accent-strong: #cf1322;
+      --accent-bg: #fff1f0;
+      --line: #e1e4e3;
+      --muted: #657369;
+      --bg: #f6f7f6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: #1a1a1a;
+      line-height: 1.8;
+    }
+    .navbar {
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      padding: 12px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-content {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-logo {
+      font-weight: 900;
+      font-size: 20px;
+      color: var(--accent-strong);
+    }
+    .nav-cta {
+      background: linear-gradient(135deg, var(--accent-strong), #d32029);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 12px;
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 14px;
+      box-shadow: 0 6px 16px rgba(207, 19, 34, 0.25);
+      transition: all 0.3s ease;
+    }
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(207, 19, 34, 0.35);
+    }
+    .article-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+    .breadcrumb {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .breadcrumb a {
+      color: var(--accent-strong);
+      text-decoration: none;
+    }
+    .article-header {
+      margin-bottom: 40px;
+    }
+    .article-title {
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 1.4;
+      margin-bottom: 16px;
+    }
+    .article-title strong {
+      color: var(--accent-strong);
+    }
+    .article-meta {
+      display: flex;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 14px;
+      flex-wrap: wrap;
+    }
+    .warning-banner {
+      background: linear-gradient(135deg, #cf1322, #d32029);
+      color: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      margin: 32px 0;
+      box-shadow: 0 12px 32px rgba(207, 19, 34, 0.35);
+    }
+    .warning-banner h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .warning-banner p {
+      opacity: 0.95;
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+    .warning-btn {
+      background: #fff;
+      color: #cf1322;
+      border: none;
+      padding: 12px 32px;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .warning-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+    .article-body h2 {
+      font-size: 21px;
+      font-weight: 800;
+      margin: 40px 0 20px;
+      color: var(--accent-strong);
+      padding-bottom: 12px;
+      border-bottom: 3px solid var(--accent-bg);
+      scroll-margin-top: 80px;
+    }
+    .article-body p {
+      margin-bottom: 18px;
+      font-size: 16px;
+      color: #333;
+    }
+    .article-body strong {
+      color: var(--accent-strong);
+      font-weight: 700;
+    }
+    .security-expert {
+      background: linear-gradient(135deg, #fff1f0, #fff2f0);
+      border-left: 4px solid #cf1322;
+      padding: 20px 24px;
+      border-radius: 0 12px 12px 0;
+      margin: 24px 0;
+    }
+    .security-expert .expert-name {
+      font-weight: 700;
+      color: #cf1322;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .security-expert p {
+      margin: 0;
+      font-size: 15px;
+      font-style: italic;
+    }
+    .risk-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      margin: 24px 0;
+      border: 1px solid #ffccc7;
+      border-left: 4px solid #cf1322;
+    }
+    .risk-card h4 {
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: #a8071a;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .risk-item {
+      display: flex;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px dashed #ffccc7;
+    }
+    .risk-item:last-child {
+      border-bottom: none;
+    }
+    .risk-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #cf1322;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .risk-text {
+      flex: 1;
+    }
+    .trademark-box {
+      background: linear-gradient(135deg, #fff7e6, #fff1e0);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      border-left: 3px solid #fa8c16;
+    }
+    .trademark-box .trademark-label {
+      font-weight: 700;
+      color: #d46b08;
+      font-size: 14px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .steps-box {
+      background: linear-gradient(135deg, #f6ffed, #f0f7f2);
+      border-radius: 16px;
+      padding: 24px;
+      margin: 24px 0;
+      border: 1px solid #b7eb8f;
+    }
+    .steps-box h4 {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: #389e0d;
+    }
+    .step-item {
+      display: flex;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px dashed #d9f7be;
+      align-items: flex-start;
+    }
+    .step-item:last-child {
+      border-bottom: none;
+    }
+    .step-number {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #52c41a;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .step-content {
+      flex: 1;
+      padding-top: 4px;
+    }
+    .step-content h5 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: #237804;
+    }
+    .step-content p {
+      margin: 0;
+      font-size: 14px;
+      color: #595959;
+    }
+    .official-badge {
+      display: inline-block;
+      background: #52c41a;
+      color: #fff;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .fake-badge {
+      display: inline-block;
+      background: #cf1322;
+      color: #fff;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .compare-table th, .compare-table td {
+      padding: 14px;
+      text-align: center;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+    .compare-table th {
+      background: var(--accent-strong);
+      color: #fff;
+      font-weight: 700;
+    }
+    .compare-table th:first-child {
+      text-align: left;
+    }
+    .compare-table td:first-child {
+      text-align: left;
+      font-weight: 600;
+    }
+    .check-green {
+      color: #52c41a;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .cross-red {
+      color: #cf1322;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    .article-footer {
+      margin-top: 60px;
+      padding-top: 32px;
+      border-top: 2px solid var(--line);
+    }
+    .footer-cta {
+      text-align: center;
+    }
+    .footer-cta h3 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .footer-cta p {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .footer-btn {
+      background: linear-gradient(135deg, var(--accent-strong), #d32029);
+      color: #fff;
+      border: none;
+      padding: 16px 56px;
+      border-radius: 16px;
+      font-weight: 800;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 12px 32px rgba(207, 19, 34, 0.35);
+      transition: all 0.3s ease;
+    }
+    .footer-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 16px 40px rgba(207, 19, 34, 0.45);
+    }
+    .related-box {
+      margin-top: 50px;
+    }
+    .related-box h3 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: var(--accent-strong);
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .related-card {
+      border-radius: 12px;
+      padding: 18px 22px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .related-card:hover {
+      transform: translateY(-2px);
+    }
+    @media (max-width: 640px) {
+      .article-title {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="nav-logo">SBTI 人格测试</div>
+      <button class="nav-cta" onclick="window.location.href='index.html'">
+        ✅ 安全官方入口
+      </button>
+    </div>
+  </nav>
+
+  <article class="article-container">
+    <div class="breadcrumb">
+      <a href="index.html">首页</a> > 安全指南
+    </div>
+
+    <header class="article-header">
+      <h1 class="article-title">【安全提醒】测SBTI先别急！<br><strong>警惕链接背后的隐私风险</strong></h1>
+      <div class="article-meta">
+        <span>📅 2025年4月10日</span>
+        <span>🔒 隐私安全</span>
+        <span>🏷️ 防诈骗指南</span>
+      </div>
+    </header>
+
+    <div class="warning-banner">
+      <h3>⚠️ 重要安全提醒</h3>
+      <p>多个仿冒SBTI链接正在社交平台传播！选择官方正版，保护个人信息安全</p>
+      <button class="warning-btn" onclick="window.location.href='index.html'">
+        ✅ 进入安全官方测试入口
+      </button>
+    </div>
+
+    <div class="article-body">
+      <h2 id="intro">一、引言</h2>
+      
+      <p>"你的SBTI是什么？"成为这两天最火的社交暗号。但在这场网络狂欢背后，一个不容忽视的安全问题也随之浮现：<strong>那些在社交平台疯传的测试链接，真的安全吗？</strong>笔者特别提醒：测SBTI先别急，以下安全须知请务必了解！</p>
+
+      <p>在享受这场网络狂欢的同时，请务必擦亮双眼——<a href="index.html" style="color: #cf1322; font-weight: 600; text-decoration: none;">点击这里进入安全可靠的官方入口</a>。</p>
+
+      <h2 id="fake">二、警惕"李鬼"链接：多个版本真假难辨</h2>
+
+      <p>笔者发现，目前社交平台上已流传着<strong>多个不同版本的SBTI测试链接</strong>，点开后界面颇为相似，但细节上却有差异。其中一些链接可能是第三方仿制的"钓鱼网站"，一旦点击授权，个人设备信息就可能被过度收集。</p>
+
+      <div class="security-expert">
+        <div class="expert-name">网络安全专家提醒</div>
+        <p>这种来历不明、突然火起来的网页，你很难搞清楚它的开发者是谁。"很多时候，一旦你点了授权，或者不小心点到了页面的跳转广告，个人设备信息就可能被过度收集。"</p>
+      </div>
+
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>特征对比</th>
+            <th width="120">官方正版</th>
+            <th width="120">仿冒钓鱼</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>要求微信授权登录</td>
+            <td><span class="cross-red">✗</span></td>
+            <td><span class="check-green">✓</span></td>
+          </tr>
+          <tr>
+            <td>要求填写手机号</td>
+            <td><span class="cross-red">✗</span></td>
+            <td><span class="check-green">✓</span></td>
+          </tr>
+          <tr>
+            <td>要求填写真实姓名/生日</td>
+            <td><span class="cross-red">✗</span></td>
+            <td><span class="check-green">✓</span></td>
+          </tr>
+          <tr>
+            <td>有大量弹窗广告</td>
+            <td><span class="cross-red">✗</span></td>
+            <td><span class="check-green">✓</span></td>
+          </tr>
+          <tr>
+            <td>纯网页本地计算</td>
+            <td><span class="check-green">✓</span></td>
+            <td><span class="cross-red">✗</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="privacy">三、隐私泄露风险：你以为在测人格，实际在"送"信息</h2>
+
+      <div class="risk-card">
+        <h4>🚨 你可能正在泄露的敏感信息</h4>
+        <div class="risk-item">
+          <div class="risk-icon">1</div>
+          <div class="risk-text"><strong>微信个人信息</strong>：昵称、头像、地区、性别等公开信息被收集</div>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon">2</div>
+          <div class="risk-text"><strong>设备指纹</strong>：IP地址、手机型号、浏览器信息等被记录</div>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon">3</div>
+          <div class="risk-text"><strong>手机号</strong>：后续可能收到精准营销或诈骗电话</div>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon">4</div>
+          <div class="risk-text"><strong>行为画像</strong>：测试答题+设备信息=你的精准用户画像</div>
+        </div>
+      </div>
+
+      <p>许多测试平台以"免费"为诱饵，强制要求授权微信登录、填写真实姓名、出生日期等敏感信息。这背后究竟有何目的？要知道，关键信息泄露可能成为<strong>精准诈骗的温床</strong>——诈骗分子可根据特定要素定制"杀猪盘"剧本。</p>
+
+      <p><strong>SBTI测试本身是纯网页应用，无需注册登录</strong>。如果你遇到的测试链接要求你输入手机号、身份证号、微信授权等敏感信息，请立即关闭页面——那很可能是仿冒链接。</p>
+
+      <h2 id="official">四、官方版本的态度：UP主明确禁止商用</h2>
+
+      <p>笔者注意到，SBTI的创作者<strong>"蛆肉儿串儿"</strong>已在测试页面明确表示，该测试仅供娱乐、禁止用于商业盈利，并多次强调"不是心理学专业""仅以好玩为主"。</p>
+
+      <p>这说明官方的态度非常明确：<strong>这是纯公益性的娱乐项目，不涉及任何商业信息和用户数据的收集</strong>。</p>
+
+      <h2 id="trademark">五、SBTI已被注册商标，警惕商业仿冒</h2>
+
+      <div class="trademark-box">
+        <div class="trademark-label">📊 企查查数据</div>
+        <p>据企查查APP数据显示，<strong>SBTI已被申请注册为商标</strong>，国际分类涉及教育娱乐、设计研究等，当前已有<strong>2枚商标注册成功</strong>。</p>
+      </div>
+
+      <p>这意味着未来可能会出现更多打着"SBTI"旗号的商业项目或仿冒测试。读者在体验时务必注意辨别——任何试图收集你个人信息的"SBTI测试"，都与原创作者的初衷背道而驰。</p>
+
+      <h2 id="steps">六、SBTI安全测试"三步法"</h2>
+
+      <p>笔者整理了一份<strong>安全测试三步法</strong>，供各位参考：</p>
+
+      <div class="steps-box">
+        <h4>🛡️ SBTI安全测试三步法</h4>
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h5>确认来源</h5>
+            <p>尽量使用官方渠道发布的链接，谨慎点击微信群、朋友圈中不明来源的分享链接。 bookmark本文推荐的官方入口，避免误入钓鱼网站。</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h5>拒绝授权</h5>
+            <p>遇到要求填写个人信息（手机号、姓名、身份证号、微信授权、地理位置等）的测试页面，不要犹豫，立即关闭。正版测试绝不需要这些信息。</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h5>保持警惕</h5>
+            <p>不要将测试结果截图分享至不熟悉的群聊或陌生人，防止被不法分子用于心理侧写和精准画像。</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="conclusion">七、既要有趣，也要安全</h2>
+
+      <p>面对风险，对个人而言，不妨将其当做一场简单娱乐，既拒绝"标签宿命论"，不让测试结果影响现实生活；也要谨慎填写敏感信息，不透露个人隐私。</p>
+
+      <p>让开心的归开心、科学的归科学、安全的归安全。</p>
+
+      <p>测SBTI是为了开心，不是为了"送信息"。选对入口，玩得放心！</p>
+    </div>
+
+    <div class="warning-banner">
+      <h3>✅ 推荐使用安全可靠的官方入口</h3>
+      <p>纯网页应用，无需登录，无需授权，不收集任何信息</p>
+      <button class="warning-btn" onclick="window.location.href='index.html'">
+        进入官方测试入口
+      </button>
+    </div>
+
+    <div class="related-box">
+      <h3>📖 延伸阅读</h3>
+      <div class="related-grid">
+        <div class="related-card" style="background: linear-gradient(135deg, #f9f0ff, #f2efff); border: 1px solid #d3adf7;" onclick="window.location.href='psychology-deep.html'">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+            <span style="background: #722ed1; color: #fff; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700;">🧠 社会心理</span>
+          </div>
+          <h4 style="font-size: 16px; font-weight: 700; margin-bottom: 4px; color: #1a1a1a;">
+            【现象级刷屏背后】SBTI爆火的五大社会心理密码
+          </h4>
+          <p style="font-size: 13px; color: #666; margin: 0;">
+            裴双义主任深度解读：幽默防御、情绪出口、社交货币 →
+          </p>
+        </div>
+        <div class="related-card" style="background: linear-gradient(135deg, #f9f0ff, #f2efff); border: 1px solid #b37feb;" onclick="window.location.href='story.html'">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+            <span style="background: #722ed1; color: #fff; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700;">🎬 幕后故事</span>
+          </div>
+          <h4 style="font-size: 16px; font-weight: 700; margin-bottom: 4px; color: #1a1a1a;">
+            SBTI的诞生始末：B站UP主劝友戒酒意外引爆全网
+          </h4>
+          <p style="font-size: 13px; color: #666; margin: 0;">
+            一个私人玩笑如何变成亿级流量的现象级狂欢 →
+          </p>
+        </div>
+        <div class="related-card" style="background: linear-gradient(135deg, #f8fff9, #f0f7f2); border: 1px solid #95deac;" onclick="window.location.href='index.html'">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+            <span style="background: #07c160; color: #fff; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700;">✅ 安全入口</span>
+          </div>
+          <h4 style="font-size: 16px; font-weight: 700; margin-bottom: 4px; color: #1a1a1a;">
+            SBTI人格测试 - 官方安全入口
+          </h4>
+          <p style="font-size: 13px; color: #666; margin: 0;">
+            无需登录，无需授权，纯本地计算，保护你的隐私 →
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="article-footer">
+      <div class="footer-cta">
+        <h3>✅ 选择官方正版，保护个人隐私！</h3>
+        <p>纯网页应用，不收集任何信息，安全又放心</p>
+        <button class="footer-btn" onclick="window.location.href='index.html'">
+          🚀 进入官方安全测试入口
+        </button>
+      </div>
+    </footer>
+  </article>
+</body>
+</html>

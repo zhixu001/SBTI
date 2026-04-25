@@ -1,0 +1,12 @@
+{
+  "name": "sbti",
+  "version": "1.0.0",
+  "description": "SBTI Personality Test",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static site - no build step required'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
